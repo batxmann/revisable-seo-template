@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { getPageData } from '../content/loader'
 import { siteConfig } from '../content/siteConfig'
+import { useDocumentMeta } from '../lib/useDocumentMeta'
 import Navbar from '../components/layout/Navbar'
 import Footer from '../components/layout/Footer'
 import Hero from '../components/sections/Hero'
@@ -14,6 +15,17 @@ import CTASection from '../components/sections/CTASection'
 function LandingPage() {
   const { category, slug } = useParams()
   const data = getPageData(category, slug)
+
+  useDocumentMeta(
+    data
+      ? data.seo
+      : {
+          title: `Page not found | ${siteConfig.brand}`,
+          description: undefined,
+          canonical: undefined,
+          noindex: true,
+        },
+  )
 
   if (!data) {
     return (

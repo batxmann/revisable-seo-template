@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom'
 import { generateStaticParams } from '../lib/generateStaticParams'
 import { siteConfig } from '../content/siteConfig'
+import { useDocumentMeta } from '../lib/useDocumentMeta'
 
 // Dev-only index so every generated page is reachable without typing URLs.
+// Not real content, so it's excluded from indexing.
 function Home() {
   const pages = generateStaticParams()
+
+  useDocumentMeta({
+    title: `${siteConfig.brand} — Programmatic SEO Template`,
+    noindex: true,
+  })
 
   return (
     <main className="container" style={{ padding: '64px 24px' }}>

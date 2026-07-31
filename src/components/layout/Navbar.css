@@ -59,6 +59,12 @@
   transition: color 0.2s ease;
 }
 
+.navbar__links a:not(.navbar__cta):focus-visible {
+  outline: 2px solid var(--mark-red);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
 .navbar__links a:not(.navbar__cta)::after {
   content: '';
   position: absolute;
