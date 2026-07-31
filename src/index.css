@@ -1,34 +1,52 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --text-soft: #8a8391;
-  --bg: #fff;
-  --bg-soft: #f8f7fb;
-  --surface: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-2: #3b82f6;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-  --shadow-lg:
-    rgba(20, 10, 40, 0.12) 0 20px 40px -12px, rgba(20, 10, 40, 0.06) 0 8px 16px -8px;
+  /* "Mark Scheme" system — grounded in the exam-paper / red-pen-grading
+     vernacular of high-stakes test prep, not a generic SaaS gradient. */
+  --paper: #f3f4f1;
+  --paper-alt: #fbfbfa;
+  --ink: #14171f;
+  --ink-soft: #4b4f58;
+  --ink-faint: #8b8e94;
+  --mark-red: #c4392b;
+  --mark-red-bg: rgba(196, 57, 43, 0.08);
+  --verified: #2f6f4e;
+  --verified-bg: rgba(47, 111, 78, 0.1);
+  --rule: #d8d6cc;
+  --highlight: #f5d949;
 
-  --radius-sm: 10px;
-  --radius: 16px;
-  --radius-lg: 24px;
+  --bg: var(--paper);
+  --bg-soft: var(--paper-alt);
+  --surface: var(--paper-alt);
+  --text: var(--ink-soft);
+  --text-h: var(--ink);
+  --text-soft: var(--ink-faint);
+  --border: var(--rule);
+  --accent: var(--mark-red);
+
+  /* Layered, soft elevation — premium depth, not a flat sticker offset. */
+  --shadow-xs: 0 1px 2px rgba(20, 23, 31, 0.06);
+  --shadow-sm: 0 1px 2px rgba(20, 23, 31, 0.05), 0 6px 16px -8px rgba(20, 23, 31, 0.18);
+  --shadow: 0 2px 4px rgba(20, 23, 31, 0.05), 0 12px 28px -12px rgba(20, 23, 31, 0.22);
+  --shadow-lg:
+    0 4px 10px rgba(20, 23, 31, 0.07), 0 24px 48px -16px rgba(20, 23, 31, 0.28);
+  --shadow-red: 0 20px 40px -18px rgba(196, 57, 43, 0.35);
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --nav-height: 80px;
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
   --container: 1160px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'IBM Plex Sans', system-ui, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --sans: var(--font-body);
+  --heading: var(--font-display);
+  --mono: var(--font-mono);
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
+  font: 17px/155% var(--font-body);
+  letter-spacing: 0.1px;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -44,23 +62,35 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --text-soft: #767c8a;
-    --bg: #16171d;
-    --bg-soft: #1c1d25;
-    --surface: #1c1d25;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-2: #60a5fa;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-    --shadow-lg:
-      rgba(0, 0, 0, 0.5) 0 20px 40px -12px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    /* Night-study desk: paper (page/card surfaces) goes dark, ink flips to
+       light so it still reads as "the mark" on top of it — same pairing
+       logic as light mode, inverted. --paper and --ink must never resolve
+       to the same tone or anything painted as (bg: ink, text: paper) —
+       e.g. .btn-primary, the CTA band — goes invisible. */
+    --paper: #14161c;
+    --paper-alt: #1b1d24;
+    --ink: #eeece4;
+    --ink-soft: #b7b9bd;
+    --ink-faint: #6d707a;
+    --mark-red: #e2604c;
+    --mark-red-bg: rgba(226, 96, 76, 0.14);
+    --verified: #4b9a72;
+    --verified-bg: rgba(75, 154, 114, 0.16);
+    --rule: #33363f;
+    --highlight: #7a6a1f;
+
+    --bg: var(--paper);
+    --bg-soft: var(--paper-alt);
+    --surface: var(--paper-alt);
+    --text: var(--ink-soft);
+    --text-h: var(--ink);
+    --text-soft: var(--ink-faint);
+    --border: var(--rule);
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.25);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 16px -8px rgba(0, 0, 0, 0.4);
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 12px 28px -12px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.35), 0 24px 48px -16px rgba(0, 0, 0, 0.55);
+    --shadow-red: 0 20px 40px -18px rgba(226, 96, 76, 0.3);
   }
 
   #social .button-icon {
@@ -94,6 +124,16 @@ a {
   color: inherit;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
 .container {
   width: 100%;
   max-width: var(--container);
@@ -109,78 +149,91 @@ a {
   gap: 8px;
   font: inherit;
   font-weight: 600;
-  font-size: 16px;
-  border-radius: 999px;
-  padding: 13px 26px;
-  border: 1px solid transparent;
+  font-size: 15.5px;
+  border-radius: var(--radius-sm);
+  padding: 14px 28px;
+  border: 1.5px solid transparent;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.2s ease,
+    border-color 0.2s ease;
   white-space: nowrap;
 }
 
-.btn:hover {
-  transform: translateY(-1px);
+.btn:active {
+  transform: translateY(0);
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--mark-red);
   outline-offset: 2px;
 }
 
 .btn-primary {
-  color: #fff;
-  background: var(--accent-gradient);
-  box-shadow: var(--shadow);
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
 .btn-secondary {
   color: var(--text-h);
-  background: transparent;
-  border-color: var(--border);
+  background: var(--paper-alt);
+  border-color: var(--rule);
 }
 
 .btn-secondary:hover {
-  background: var(--bg-soft);
+  transform: translateY(-2px);
+  border-color: var(--ink);
+  box-shadow: var(--shadow-xs);
 }
 
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  font-size: 13px;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text-soft);
+}
+
+.eyebrow::before {
+  content: '\00a7\0020';
+  color: var(--mark-red);
+  font-weight: 600;
 }
 
 h1,
-h2 {
-  font-family: var(--heading);
+h2,
+h3 {
+  font-family: var(--font-display);
   font-weight: 500;
   color: var(--text-h);
 }
 
 h1 {
   font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  margin: 20px 0;
   @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+    font-size: 38px;
   }
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
   margin: 0 0 8px;
   @media (max-width: 1024px) {
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 p {
@@ -189,7 +242,7 @@ p {
 
 code,
 .counter {
-  font-family: var(--mono);
+  font-family: var(--font-mono);
   display: inline-flex;
   border-radius: 4px;
   color: var(--text-h);
@@ -199,5 +252,5 @@ code {
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
-  background: var(--code-bg);
+  background: var(--mark-red-bg);
 }

@@ -1,0 +1,168 @@
+.graded-card {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px 36px;
+  box-shadow: 0 1px 1px rgba(20, 23, 31, 0.04) inset, var(--shadow-lg), var(--shadow-red);
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .graded-card {
+    animation: none;
+  }
+}
+
+.graded-card__stamp {
+  position: absolute;
+  top: -20px;
+  right: -16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 2px solid var(--mark-red);
+  color: var(--mark-red);
+  background: var(--paper-alt);
+  box-shadow: var(--shadow-xs);
+  transform: rotate(-8deg);
+}
+
+.graded-card__stamp-value {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.graded-card__stamp-label {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.graded-card__tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.graded-card__prompt {
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text-h);
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.graded-card__options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.graded-card__option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 36px 11px 11px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-size: 14.5px;
+  text-align: left;
+  color: var(--text);
+  transition: background 0.2s ease;
+}
+
+.graded-card__option--correct {
+  border-color: var(--verified);
+  background: var(--verified-bg);
+  color: var(--text-h);
+}
+
+.graded-card__letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-soft);
+}
+
+.graded-card__option--correct .graded-card__letter {
+  border-color: var(--verified);
+  color: var(--verified);
+}
+
+.graded-card__check {
+  position: absolute;
+  right: 11px;
+  width: 18px;
+  height: 18px;
+  color: var(--mark-red);
+  stroke-dasharray: 26;
+  stroke-dashoffset: 26;
+  animation: draw-check 0.5s ease-out 0.6s forwards;
+}
+
+@keyframes draw-check {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .graded-card__check {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .graded-card {
+    max-width: 100%;
+    animation: none;
+    padding: 30px 24px 28px;
+  }
+
+  .graded-card__stamp {
+    width: 72px;
+    height: 72px;
+    top: -16px;
+    right: -10px;
+  }
+}

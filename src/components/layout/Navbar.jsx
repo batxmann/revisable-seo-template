@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -7,9 +7,17 @@ import './Navbar.css'
 // at once without touching this component.
 function Navbar({ brand, navLinks = [], cta }) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 12)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
         <Link to="/" className="navbar__brand" onClick={() => setIsOpen(false)}>
           {brand}

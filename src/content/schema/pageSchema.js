@@ -14,12 +14,21 @@ const seoSchema = z.object({
   canonical: z.string().optional(),
 })
 
+const sampleQuestionSchema = z.object({
+  examLabel: z.string(),
+  prompt: z.string(),
+  options: z.array(z.string()).min(2),
+  correctIndex: z.number().int().min(0),
+  stat: z.object({ value: z.string(), label: z.string() }).optional(),
+})
+
 const heroSchema = z.object({
   headline: z.string(),
   subheadline: z.string(),
   primaryCta: ctaButtonSchema,
   secondaryCta: ctaButtonSchema.optional(),
   image: z.string().optional(),
+  sampleQuestion: sampleQuestionSchema.optional(),
 })
 
 const trustBadgeSchema = z.object({

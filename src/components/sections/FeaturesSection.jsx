@@ -25,7 +25,7 @@ function FeaturesSection({
               <p>{feature.description}</p>
               {feature.href && (
                 <a className="features__link" href={feature.href}>
-                  Explore &rarr;
+                  Explore
                 </a>
               )}
             </article>

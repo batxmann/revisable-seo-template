@@ -7,6 +7,7 @@ function CTASection({ headline, subheadline, primaryCta }) {
     <section className="cta">
       <div className="container cta__inner">
         <h2>{headline}</h2>
+        <span className="cta__rule" aria-hidden="true" />
         {subheadline && <p>{subheadline}</p>}
         <a href={primaryCta.href} className="btn btn-primary cta__btn">
           {primaryCta.label}

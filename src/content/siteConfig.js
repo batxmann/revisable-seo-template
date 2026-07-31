@@ -10,7 +10,7 @@ export const siteConfig = {
     { label: 'Benefits', href: '#benefits' },
     { label: 'Pricing', href: '#pricing' },
   ],
-  navCta: { label: 'Get the app', href: '#download' },
+  navCta: { label: 'Start Learning Free', href: '#download' },
   footer: {
     columns: [
       {

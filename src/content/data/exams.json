@@ -10,8 +10,15 @@
     "hero": {
       "headline": "The #1 self-study platform for NEET",
       "subheadline": "AI-personalized flashcards, QBanks, and video lessons built for NEET aspirants. Join 100K+ students studying smarter.",
-      "primaryCta": { "label": "Get the app", "href": "#download" },
-      "secondaryCta": { "label": "Explore features", "href": "#features" }
+      "primaryCta": { "label": "Start Learning Free", "href": "#download" },
+      "secondaryCta": { "label": "Explore features", "href": "#features" },
+      "sampleQuestion": {
+        "examLabel": "NEET · Biology",
+        "prompt": "Which cell structure is the primary site of protein synthesis in a eukaryotic cell?",
+        "options": ["Golgi apparatus", "Ribosome", "Lysosome", "Peroxisome"],
+        "correctIndex": 1,
+        "stat": { "value": "342", "label": "AIR, NEET 2025" }
+      }
     },
     "trustBadges": [
       { "icon": "📚", "label": "Curated by NEET toppers" },
@@ -47,7 +54,7 @@
     "cta": {
       "headline": "India's first medical AI trained on 1M+ pages",
       "subheadline": "Start studying smarter for NEET today — free to try.",
-      "primaryCta": { "label": "Get the app", "href": "#download" }
+      "primaryCta": { "label": "Start Learning Free", "href": "#download" }
     },
     "testimonials": [
       {
@@ -87,8 +94,15 @@
     "hero": {
       "headline": "The #1 self-study platform for USMLE Step 1",
       "subheadline": "AI-personalized flashcards, QBanks, and video lessons built for USMLE Step 1 candidates. Join 100K+ students studying smarter.",
-      "primaryCta": { "label": "Get the app", "href": "#download" },
-      "secondaryCta": { "label": "Explore features", "href": "#features" }
+      "primaryCta": { "label": "Start Learning Free", "href": "#download" },
+      "secondaryCta": { "label": "Explore features", "href": "#features" },
+      "sampleQuestion": {
+        "examLabel": "USMLE Step 1 · Internal Medicine",
+        "prompt": "Which lab finding is most specific for acute pancreatitis?",
+        "options": ["Elevated lipase", "Elevated ALT", "Elevated CRP", "Elevated WBC count"],
+        "correctIndex": 0,
+        "stat": { "value": "99th", "label": "QBank percentile" }
+      }
     },
     "trustBadges": [
       { "icon": "📚", "label": "Curated by residency-matched physicians" },
@@ -117,7 +131,7 @@
     "cta": {
       "headline": "Board-ready, one microlearning session at a time",
       "subheadline": "Start studying smarter for USMLE Step 1 today — free to try.",
-      "primaryCta": { "label": "Get the app", "href": "#download" }
+      "primaryCta": { "label": "Start Learning Free", "href": "#download" }
     },
     "testimonials": [
       {
@@ -152,7 +166,14 @@
     "hero": {
       "headline": "The #1 self-study platform for MCAT",
       "subheadline": "AI-personalized flashcards, QBanks, and video lessons built for MCAT applicants. Join 100K+ students studying smarter.",
-      "primaryCta": { "label": "Get the app", "href": "#download" }
+      "primaryCta": { "label": "Start Learning Free", "href": "#download" },
+      "sampleQuestion": {
+        "examLabel": "MCAT · Biochemistry",
+        "prompt": "Which macromolecule class serves as the primary catalyst in biological reactions?",
+        "options": ["Lipids", "Carbohydrates", "Proteins", "Nucleic acids"],
+        "correctIndex": 2,
+        "stat": { "value": "92nd", "label": "Percentile gain" }
+      }
     },
     "trustBadges": [
       { "icon": "📚", "label": "Curated by MCAT high-scorers" },
@@ -173,7 +194,7 @@
     "cta": {
       "headline": "Ready to hit your MCAT target score?",
       "subheadline": "Start studying smarter for MCAT today — free to try.",
-      "primaryCta": { "label": "Get the app", "href": "#download" }
+      "primaryCta": { "label": "Start Learning Free", "href": "#download" }
     },
     "testimonials": [],
     "faq": [
