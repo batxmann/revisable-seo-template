@@ -1,0 +1,39 @@
+.cta {
+  padding: 96px 0;
+  background: var(--accent-gradient);
+  color: #fff;
+  text-align: center;
+}
+
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.cta h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -0.02em;
+  max-width: 20ch;
+}
+
+.cta p {
+  max-width: 52ch;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cta__btn {
+  margin-top: 12px;
+  background: #fff;
+  color: var(--text-h);
+  box-shadow: none;
+}
+
+.cta__btn:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}

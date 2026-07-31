@@ -1,0 +1,190 @@
+[
+  {
+    "slug": "neet",
+    "category": "exam",
+    "seo": {
+      "title": "The #1 Self-Study Platform for NEET | StudyStack",
+      "description": "AI-personalized flashcards, QBanks, and video lessons built for NEET aspirants. Join 100K+ students studying smarter.",
+      "canonical": "/exam/neet"
+    },
+    "hero": {
+      "headline": "The #1 self-study platform for NEET",
+      "subheadline": "AI-personalized flashcards, QBanks, and video lessons built for NEET aspirants. Join 100K+ students studying smarter.",
+      "primaryCta": { "label": "Get the app", "href": "#download" },
+      "secondaryCta": { "label": "Explore features", "href": "#features" }
+    },
+    "trustBadges": [
+      { "icon": "📚", "label": "Curated by NEET toppers" },
+      { "icon": "🤖", "label": "AI-personalized study plans" },
+      { "icon": "⚡", "label": "Microlearning by design" },
+      { "icon": "⭐", "label": "4.7+ app rating" }
+    ],
+    "features": [
+      {
+        "title": "Ruby AI Tutor",
+        "description": "Ask doubts in plain language and get instant, syllabus-aligned answers.",
+        "icon": "🧑‍🏫",
+        "href": "#ruby"
+      },
+      {
+        "title": "AI Test Analysis",
+        "description": "See exactly where you're losing marks and what to revise next.",
+        "icon": "📊",
+        "href": "#analysis"
+      },
+      {
+        "title": "AI Content Generation",
+        "description": "Auto-generated flashcards and summaries from the latest NEET syllabus.",
+        "icon": "✨",
+        "href": "#generate"
+      }
+    ],
+    "benefits": [
+      { "stat": "200K+", "title": "Flashcards", "description": "Reviewed by NEET subject-matter educators." },
+      { "stat": "100K+", "title": "MCQs", "description": "Practice questions modeled on real NEET patterns." },
+      { "stat": "5K+", "title": "Videos & notes", "description": "Educator-created explainers for every chapter." }
+    ],
+    "cta": {
+      "headline": "India's first medical AI trained on 1M+ pages",
+      "subheadline": "Start studying smarter for NEET today — free to try.",
+      "primaryCta": { "label": "Get the app", "href": "#download" }
+    },
+    "testimonials": [
+      {
+        "name": "Ananya S.",
+        "outcome": "AIR 342, NEET 2025",
+        "quote": "The AI test analysis showed me exactly which chapters were costing me marks."
+      },
+      {
+        "name": "Rohit K.",
+        "outcome": "AIR 1,210, NEET 2025",
+        "quote": "Microlearning flashcards fit into every gap in my schedule."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is the content trustworthy for NEET?",
+        "answer": "Yes — every flashcard and QBank question is reviewed by subject-matter educators before publishing."
+      },
+      {
+        "question": "Does it cover the full NEET syllabus?",
+        "answer": "Yes, all NCERT-aligned topics across Physics, Chemistry, and Biology are covered."
+      }
+    ],
+    "relatedPages": [
+      { "label": "Study platform for USMLE Step 1", "href": "/exam/usmle-step-1" },
+      { "label": "Study platform for MCAT", "href": "/exam/mcat" }
+    ]
+  },
+  {
+    "slug": "usmle-step-1",
+    "category": "exam",
+    "seo": {
+      "title": "The #1 Self-Study Platform for USMLE Step 1 | StudyStack",
+      "description": "AI-personalized flashcards, QBanks, and video lessons built for USMLE Step 1 candidates. Join 100K+ students studying smarter.",
+      "canonical": "/exam/usmle-step-1"
+    },
+    "hero": {
+      "headline": "The #1 self-study platform for USMLE Step 1",
+      "subheadline": "AI-personalized flashcards, QBanks, and video lessons built for USMLE Step 1 candidates. Join 100K+ students studying smarter.",
+      "primaryCta": { "label": "Get the app", "href": "#download" },
+      "secondaryCta": { "label": "Explore features", "href": "#features" }
+    },
+    "trustBadges": [
+      { "icon": "📚", "label": "Curated by residency-matched physicians" },
+      { "icon": "🤖", "label": "AI-personalized study plans" },
+      { "icon": "⚡", "label": "Microlearning by design" },
+      { "icon": "⭐", "label": "4.7+ app rating" }
+    ],
+    "features": [
+      {
+        "title": "Ruby AI Tutor",
+        "description": "Ask doubts in plain language and get instant, board-aligned answers.",
+        "icon": "🧑‍🏫",
+        "href": "#ruby"
+      },
+      {
+        "title": "AI Test Analysis",
+        "description": "See exactly where you're losing points and what to revise next.",
+        "icon": "📊",
+        "href": "#analysis"
+      }
+    ],
+    "benefits": [
+      { "stat": "200K+", "title": "Flashcards", "description": "Reviewed by physician-educators before publishing." },
+      { "stat": "100K+", "title": "Board-style MCQs", "description": "Updated as guidelines change." }
+    ],
+    "cta": {
+      "headline": "Board-ready, one microlearning session at a time",
+      "subheadline": "Start studying smarter for USMLE Step 1 today — free to try.",
+      "primaryCta": { "label": "Get the app", "href": "#download" }
+    },
+    "testimonials": [
+      {
+        "name": "Priya M.",
+        "outcome": "Step 1: Pass, matched into IM",
+        "quote": "The QBanks felt closer to the real exam than anything else I used."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is the content trustworthy for USMLE Step 1?",
+        "answer": "Yes — every flashcard and QBank question is reviewed by physician-educators before publishing."
+      },
+      {
+        "question": "How much content is available?",
+        "answer": "200K+ flashcards and 100K+ board-style MCQs, updated as guidelines change."
+      }
+    ],
+    "relatedPages": [
+      { "label": "Study platform for NEET", "href": "/exam/neet" },
+      { "label": "Study platform for MCAT", "href": "/exam/mcat" }
+    ]
+  },
+  {
+    "slug": "mcat",
+    "category": "exam",
+    "seo": {
+      "title": "The #1 Self-Study Platform for MCAT | StudyStack",
+      "description": "AI-personalized flashcards, QBanks, and video lessons built for MCAT applicants. Join 100K+ students studying smarter.",
+      "canonical": "/exam/mcat"
+    },
+    "hero": {
+      "headline": "The #1 self-study platform for MCAT",
+      "subheadline": "AI-personalized flashcards, QBanks, and video lessons built for MCAT applicants. Join 100K+ students studying smarter.",
+      "primaryCta": { "label": "Get the app", "href": "#download" }
+    },
+    "trustBadges": [
+      { "icon": "📚", "label": "Curated by MCAT high-scorers" },
+      { "icon": "🤖", "label": "AI-personalized study plans" },
+      { "icon": "⭐", "label": "4.7+ app rating" }
+    ],
+    "features": [
+      {
+        "title": "AI Content Generation",
+        "description": "Auto-generated flashcards and summaries mapped to the AAMC content outline.",
+        "icon": "✨",
+        "href": "#generate"
+      }
+    ],
+    "benefits": [
+      { "stat": "515", "title": "Avg. score lift", "description": "Reported by students completing the full study plan." }
+    ],
+    "cta": {
+      "headline": "Ready to hit your MCAT target score?",
+      "subheadline": "Start studying smarter for MCAT today — free to try.",
+      "primaryCta": { "label": "Get the app", "href": "#download" }
+    },
+    "testimonials": [],
+    "faq": [
+      {
+        "question": "Does it cover CARS?",
+        "answer": "Yes, including timed passage practice and strategy breakdowns."
+      }
+    ],
+    "relatedPages": [
+      { "label": "Study platform for NEET", "href": "/exam/neet" },
+      { "label": "Study platform for USMLE Step 1", "href": "/exam/usmle-step-1" }
+    ]
+  }
+]
